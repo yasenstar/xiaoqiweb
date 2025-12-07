@@ -17,6 +17,15 @@ function App() {
         >
           Learn my courses in Udemy
         </a>
+        <br></br>
+        <a
+          className="App-link"
+          href="http://www.youtube.com/@yasenzhao"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch my shared videos in YouTube
+        </a>
       </header>
     </div>
   );
