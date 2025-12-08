@@ -71,11 +71,12 @@ body {
   align-items: center;
 }
 
-.nav-list li {
+.nav-list .li {
   margin: 0 10px;
+  text-decoration: left;
 }
 
-.nav-list li a {
+.nav-list .li a {
   color: white;
   text-decoration: none;
 }
