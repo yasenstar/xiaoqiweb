@@ -52,7 +52,7 @@ function App() {
               <br/><br/>However, treat it more like a “workshop repository + tutorial set” than a polished “course for everyone.” 
               <br/>It requires effort, but reward is strong if you commit.</p>
           </section>
-          {/* <section>
+          <section>
             <Router>
               <nav>
                 <ul>
@@ -67,7 +67,7 @@ function App() {
                 <Route path="/Course" element={<Course />} />
               </Routes>
             </Router>
-          </section> */}
+          </section>
           <section id="contact">
             <h2>Contact Me</h2>
             <p>Email me at <a className="App-link" href="mailto:xiaoqizhao@outlook.com">my Email </a></p>
