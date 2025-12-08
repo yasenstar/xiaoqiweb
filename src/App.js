@@ -12,7 +12,7 @@ function App() {
       </header> */}
       <div className="home-container">
         <header className="navbar">
-          <img src={logo} className="EA-logo" alt="logo" />
+          <img className="logo" src={logo} alt="ea-logo" />
           <h1>Welcome to Xiaoqi's Home Site</h1>
           {/* <nav>
             <ul className="nav-list">
