@@ -70,7 +70,7 @@ function App() {
         </main>
 
         <footer className="footer">
-          <p>© 2025 Xiaoqi Website. All rights reserved.</p>
+          <p>© 2025~2026 Xiaoqi Website. All rights reserved.</p>
         </footer>
       </div>
     </div>
