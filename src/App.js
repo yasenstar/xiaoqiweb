@@ -2,9 +2,6 @@ import React from 'react';
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import logo from './logo.jpeg';
 import './App.css';
-// import Home from './pages/Home';
-// import Blog from './pages/Blog';
-// import Course from './pages/Course';
 
 function App() {
   return (
