@@ -10,7 +10,7 @@ function App() {
       <div className="home-container">
         <header className="navbar">
           <img className="logo" src={logo} alt="ea-logo" />
-          <h1>Turning Enterprise Architecture into Executable Knowledge</h1> <br/> <h2>Xiaoqi Zhao (Yasen)</h2>
+          <h1>Turning Enterprise Architecture into Executable Knowledge</h1>
         </header>
 
         <main className="main-content">
