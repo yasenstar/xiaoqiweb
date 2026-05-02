@@ -18,7 +18,13 @@ const courses = [
     title: "Archi (ArchiMate) Modeling Practices with ArchiMetal",
     image: "img/Archi_Modeling_ArchiMetal_2023.png",
     link: "https://www.udemy.com/course/archi-archimate-modeling-practices-with-archimetal/?referralCode=8D924B20ABC6D50F6EA2"
-  } 
+  },
+  {
+    id: 4,
+    title: "Master Enterprise Architecture Meta-Model: 1. Business Layer",
+    image: "img/EA_Modeling_1_Business.png",
+    link: "https://www.udemy.com/course/master-ea-meta-model-1-business-layer/?referralCode=4E8A5F0A2D4232813C7B"
+  }
 ];
 
 const CourseCard = ({ course }) => {
@@ -34,11 +40,11 @@ const CourseCard = ({ course }) => {
             target="_blank" 
             rel="noopener noreferrer" 
             className="flex-shrink-0 w-[280px] cursor-pointer group no-underline text-inherit">                
-            <div className="mt-2 flex flex-col gap-1 pr-4">
+            {/* <div className="mt-2 flex flex-col gap-1 pr-4">
                 <h3 className="font-bold text-sm leading-tight line-clamp-2 h-10">
                     {title}
                 </h3>
-            </div>
+            </div> */}
             <div className="relative border border-gray-200 overflow-hidden rounded-sm">
                 <img 
                     src={image} 
