@@ -30,6 +30,24 @@ const courses = [
     title: "Master Enterprise Architecture Meta-Model: 2. Application Layer",
     image: "img/EA_Modeling_2_Application.png",
     link: "https://www.udemy.com/course/master-ea-meta-model-2-application-layer/?referralCode=9C0F56C1C935E94057B6"
+  },
+  {
+    id: 6,
+    title: "Mastering Archi (ArchiMate) User Guide Tutorial by Practice",
+    image: "img/Archi_UserGuide_Tutorial.png",
+    link: "https://www.udemy.com/course/archi-tool-user-guide-tutorial/?referralCode=B7FD975B5B8F58109B76"
+  },
+  {
+    id: 7,
+    title: "Modeling SABSA Security Architecture in ArchiMate with Archi",
+    image: "img/Modeling_SABSA.png",
+    link: "https://www.udemy.com/course/modeling-sabsa-in-archimate-using-archi/?referralCode=A7C514E23B59103E9FC3"
+  },
+  {
+    id: 8,
+    title: "ArchiMate - ArchiSurance 3.2 - Modeling Practice (2025 Edition)",
+    image: "img/Archi_Modeling_ArchiSurance_2025.png",
+    link: "https://www.udemy.com/course/archimate-archisurance-modeling-practice-2025/?referralCode=4522D8745A059468F033"
   }
 ];
 
