@@ -10,20 +10,29 @@ function App() {
       <div className="home-container">
         <header className="navbar">
           <img className="logo" src={logo} alt="ea-logo" />
-          <h1>Xiaoqi Zhao (Yasen)</h1> <br/> <h2>Enterprise Architecture & Ontology Modeling Practitioner</h2>
+          <h1>Turning Enterprise Architecture into Executable Knowledge</h1> <br/> <h2>Xiaoqi Zhao (Yasen)</h2>
         </header>
 
         <main className="main-content">
           <section id="about">
-            <h2>Bridging the gap between IT Strategy, Modeling, and Semantic Technology.</h2>
-            <h2>About Me</h2>
-            <p>With over 25 years of hands-on experience in the Information Technology field, I specialize in transforming complex business requirements into robust architectural designs. My expertise spans IT strategy, project management, and cross-domain system architecture.
-              <br/><br/>
-              I hold a comprehensive suite of industry-recognized certifications—including TOGAF, ArchiMate, CISSP, PMP, ITIL, and CISA—and am deeply passionate about exploring the intersection of programming languages and semantic modeling.
-              <br/><br/>
-              My mission is to empower the next generation of architects by sharing practical, real-world knowledge through structured online teaching and open-source contributions
+            <h2>I build meta-model-driven systems that transform enterprise complexity into structured, AI-ready knowledge.</h2>
+            <h3>Most enterprise architecture is documentation.<br/>I turn it into systems that can be executed, queried, and understood by AI.</h3>
+            <br/>
+            <h2>EKA Framework™ (Executable Knowledge Architecture)</h2>
+            <h3>A 3-layer architecture that connects meta-models, knowledge graphs, and AI execution into one unified system.</h3>            
+            <div>
+              <li>Without meta-models, systems cannot scale</li>
+              <li>Without knowledge graphs, data has no meaning</li>
+              <li>Without execution, architecture has no value</li>
+            </div>
+            <br/>
+            <h2>Who Am I?</h2>
+            <p>
+              I work at the intersection of Enterprise Architecture, Knowledge Graphs, and AI.<br/>
+              My focus is not modeling systems —<br/>
+              but making them computable, connected, and executable.<br/>
+              I design frameworks that turn fragmented enterprise knowledge into structured systems that AI can understand and act on.
             </p>
-            <p>Want to know more about me or to connect? Visit my <a className="App-Link" href="https://www.linkedin.com/in/xiaoqi-zhao">LinkedIn</a> page.</p>
           </section>
           <section id="share">
             <CourseList />
