@@ -15,17 +15,31 @@ function App() {
 
         <main className="main-content">
           <section id="about">
-            <h2>I build meta-model-driven systems that transform enterprise complexity into structured, AI-ready knowledge.</h2>
+            <h2>Enterprise Architecture is Broken. I Make It Executable!</h2>
             <h3>Most enterprise architecture is documentation.<br/>I turn it into systems that can be executed, queried, and understood by AI.</h3>
             <br/>
             <h2>EKA Framework™ (Executable Knowledge Architecture)</h2>
-            <h3>A 3-layer architecture that connects meta-models, knowledge graphs, and AI execution into one unified system.</h3>            
-            <div>
-              <li>Without meta-models, systems cannot scale</li>
-              <li>Without knowledge graphs, data has no meaning</li>
-              <li>Without execution, architecture has no value</li>
+            <h3>A system that makes enterprise knowledge executable.</h3>            
+            <h4>
+              <li>Structure - "Meta Models": Without meta-models, systems cannot scale</li>
+              <li>Mearing - "Knowledge Graphs":  Without knowledge graphs, data has no meaning</li>
+              <li>Execution - "AI & Agents": Without execution, architecture has no value</li>
+            </h4>
+            <div className="border border-gray-200 overflow-hidden rounded-sm shadow-sm transition-shadow hover:shadow-md">
+              <img 
+                src="EKA.png" alt="EKA"
+                className="w-full h-auto aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
+            <h3>Not diagrams! Not documentation! A system that can run!</h3>
             <br/>
+          </section>
+          <section id="share">
+            <CourseList />
+            <h3>Explore the Framework (TBA)</h3>
+            <h3>App to Your System (TBA)</h3>
+          </section>
+          <section>            
             <h2>Who Am I?</h2>
             <p>
               I work at the intersection of Enterprise Architecture, Knowledge Graphs, and AI.<br/>
@@ -33,9 +47,6 @@ function App() {
               but making them computable, connected, and executable.<br/>
               I design frameworks that turn fragmented enterprise knowledge into structured systems that AI can understand and act on.
             </p>
-          </section>
-          <section id="share">
-            <CourseList />
           </section>
 
           <section id="contact">

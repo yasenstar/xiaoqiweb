@@ -66,9 +66,6 @@ const CourseCard = ({ course }) => {
           className="w-full h-auto aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
-      {/* <p className="mt-2 text-sm font-bold leading-tight line-clamp-2 text-gray-800 group-hover:text-blue-600">
-        {course.title}
-      </p> */}
     </a>
   );
 };
@@ -76,7 +73,7 @@ const CourseCard = ({ course }) => {
 const CourseList = () => {
   return (
     <div className="py-8 w-full">
-      <h2 className="text-2xl font-bold mb-6 text-left">My Featured Udemy Courses</h2>      
+      <h2 className="text-2xl font-bold mb-6 text-left">Learn the Model: My Featured Udemy Courses</h2>      
       {/* 
           Standard CSS Grid: 
           1 col on mobile, 3 on tablet, 5 on desktop 
