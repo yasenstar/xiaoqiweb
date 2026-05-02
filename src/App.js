@@ -1,5 +1,6 @@
 import React from 'react';
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import CourseList from './pages/CourseList';
 import logo from './logo.jpeg';
 import './App.css';
 
@@ -25,42 +26,7 @@ function App() {
             <p>Want to know more about me or to connect? Visit my <a className="App-Link" href="https://www.linkedin.com/in/xiaoqi-zhao">LinkedIn</a> page.</p>
           </section>
           <section id="share">
-            <h2>My Shared Resources (Call to Action)</h2>
-            <p>Master ArchiMate & Ontology:&nbsp;
-              <a
-                className="App-link"
-                href="https://www.udemy.com/user/xiaoqi-zhao/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                [Enroll in my Udemy Courses]
-              </a>
-            </p>
-            <p>Watch my shared deep-dive videos in YouTube:&nbsp;
-              <a
-                className="App-link"
-                href="http://www.youtube.com/@yasenzhao"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                [Subscribe to my YouTube Channel]
-              </a>
-            </p>
-            <p>Open Source Projects:&nbsp;
-              <a
-                className="App-link"
-                href="https://github.com/yasenstar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                [Explore my GitHub Repositories]
-              </a>
-            </p>
-
-            <p>Public Assessment on my knowledge sharing:<br/>
-              <br/>"A High-Quality Niche Resource" Yasenstar stands out for combining Enterprise Architecture (ArchiMate) with semantic modeling in a practical, open-source way.
-              <br/>It is the go-to resource for bridging modeling and semantics to build rigor in system design and knowledge graphs.
-            </p>
+            <CourseList />
           </section>
 
           <section id="contact">
