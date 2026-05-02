@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -83,6 +83,9 @@ body {
 
 .main-content {
   padding: 20px;
+  max-width: 1200px; /* Essential: Gives the grid enough room to spread into 5 columns */
+  margin: 0 auto;    /* Centers the container on the page */
+  text-align: left;  /* Keeps your professional bio text clean */
 }
 
 .main-content section {
@@ -94,4 +97,10 @@ body {
   background-color: #333;
   color: white;
   padding: 10px;
+}
+
+/* Ensure the share section takes full width of the main-content */
+#share {
+  width: 100%;
+  display: block;
 }

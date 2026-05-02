@@ -24,57 +24,56 @@ const courses = [
     title: "Master Enterprise Architecture Meta-Model: 1. Business Layer",
     image: "img/EA_Modeling_1_Business.png",
     link: "https://www.udemy.com/course/master-ea-meta-model-1-business-layer/?referralCode=4E8A5F0A2D4232813C7B"
+  },
+  {
+    id: 5,
+    title: "Master Enterprise Architecture Meta-Model: 2. Application Layer",
+    image: "img/EA_Modeling_2_Application.png",
+    link: "https://www.udemy.com/course/master-ea-meta-model-2-application-layer/?referralCode=9C0F56C1C935E94057B6"
   }
 ];
 
 const CourseCard = ({ course }) => {
-    const {
-        title,
-        image,
-        link
-    } = course;
-
-    return (
-        <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex-shrink-0 w-[280px] cursor-pointer group no-underline text-inherit">                
-            {/* <div className="mt-2 flex flex-col gap-1 pr-4">
-                <h3 className="font-bold text-sm leading-tight line-clamp-2 h-10">
-                    {title}
-                </h3>
-            </div> */}
-            <div className="relative border border-gray-200 overflow-hidden rounded-sm">
-                <img 
-                    src={image} 
-                    alt={title} 
-                    className="w-full h-[160px] object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-            </div>
-        </a>
-    );
+  return (
+    <a 
+      href={course.link} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="block group no-underline text-inherit"
+    >                 
+      <div className="border border-gray-200 overflow-hidden rounded-sm shadow-sm transition-shadow hover:shadow-md">
+        <img 
+          src={course.image} 
+          alt={course.title} 
+          className="w-full h-auto aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      {/* <p className="mt-2 text-sm font-bold leading-tight line-clamp-2 text-gray-800 group-hover:text-blue-600">
+        {course.title}
+      </p> */}
+    </a>
+  );
 };
 
 const CourseList = () => {
-    return (
-        <div className="py-12 px-4 max-w-7xl mx-auto font-sans">
-            <section>
-                <h2 className="text-2xl font-bold mb-6">Recommended for you</h2>
-                
-                {/* Scroll Container */}
-                <div className="relative">
-                    <div className="flex flex-nowrap overflow-x-auto gap-4 pb-6 scrollbar-hide snap-x cursor-grab active:cursor-grabbing">
-                        {courses.map(item => (
-                            <div key={item.id} className="snap-start">
-                                <CourseCard course={item} />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-        </div>
-    );
+  return (
+    <div className="py-8 w-full">
+      <h2 className="text-2xl font-bold mb-6 text-left">My Featured Udemy Courses</h2>      
+      {/* 
+          Standard CSS Grid: 
+          1 col on mobile, 3 on tablet, 5 on desktop 
+      */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+        gap: '1.5rem'
+      }}>
+        {courses.map(item => (
+          <CourseCard key={item.id} course={item} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default CourseList;
