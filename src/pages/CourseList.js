@@ -18,58 +18,57 @@ const courses = [
     title: "Archi (ArchiMate) Modeling Practices with ArchiMetal",
     image: "img/Archi_Modeling_ArchiMetal_2023.png",
     link: "https://www.udemy.com/course/archi-archimate-modeling-practices-with-archimetal/?referralCode=8D924B20ABC6D50F6EA2"
-  }  
+  } 
 ];
 
-// Component for the individual card
 const CourseCard = ({ course }) => {
-  const {
-    title,
-    image,
-    link
-  } = course;
+    const {
+        title,
+        image,
+        link
+    } = course;
 
-  return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="flex flex-col cursor-pointer group no-underline text-inherit">
-      <div className="relative border border-gray-200 overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-40 object-cover group-hover:opacity-90 transition-opacity"
-        />
-      </div>
-      <div className="mt-2 flex flex-col gap-1">
-        <h3 className="font-bold text-sm leading-tight line-clamp-2 h-10">
-          {title}
-        </h3>
-        {/* {badge && (
-          <div className="mt-1">
-            <span className={`text-[10px] font-bold px-2 py-1 ${
-              badge === 'Bestseller' ? 'bg-yellow-100 text-yellow-900' : 'bg-purple-100 text-purple-900'
-            }`}>
-              {badge}
-            </span>
-          </div>
-        )} */}
-      </div>
-    </a>
-  );
+    return (
+        <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex-shrink-0 w-[280px] cursor-pointer group no-underline text-inherit">                
+            <div className="mt-2 flex flex-col gap-1 pr-4">
+                <h3 className="font-bold text-sm leading-tight line-clamp-2 h-10">
+                    {title}
+                </h3>
+            </div>
+            <div className="relative border border-gray-200 overflow-hidden rounded-sm">
+                <img 
+                    src={image} 
+                    alt={title} 
+                    className="w-full h-[160px] object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+            </div>
+        </a>
+    );
 };
 
-// Main component to export
 const CourseList = () => {
-  return (
-    <div className="p-8 max-w-7xl mx-auto font-sans">
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Recommended for you</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {courses.map(item => (
-            <CourseCard key={item.id} course={item} />
-          ))}
+    return (
+        <div className="py-12 px-4 max-w-7xl mx-auto font-sans">
+            <section>
+                <h2 className="text-2xl font-bold mb-6">Recommended for you</h2>
+                
+                {/* Scroll Container */}
+                <div className="relative">
+                    <div className="flex flex-nowrap overflow-x-auto gap-4 pb-6 scrollbar-hide snap-x cursor-grab active:cursor-grabbing">
+                        {courses.map(item => (
+                            <div key={item.id} className="snap-start">
+                                <CourseCard course={item} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  );
+    );
 };
 
 export default CourseList;
