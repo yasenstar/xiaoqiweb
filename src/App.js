@@ -19,20 +19,32 @@ function App() {
             <h3>Most enterprise architecture is documentation.<br/>I turn it into systems that can be executed, queried, and understood by AI.</h3>
             <br/>
             <h2>EKA Framework™ (Executable Knowledge Architecture)</h2>
-            <h3>A system that makes enterprise knowledge executable.</h3>            
-            <h4>
-              <li>Structure - "Meta Models": Without meta-models, systems cannot scale</li>
-              <li>Mearing - "Knowledge Graphs":  Without knowledge graphs, data has no meaning</li>
-              <li>Execution - "AI & Agents": Without execution, architecture has no value</li>
-            </h4>
+            <h3>A system that makes enterprise knowledge executable.</h3>
+            <h3>The EKA Framework is defined by the EKA Core Architecture below.</h3>
             <div className="border border-gray-200 overflow-hidden rounded-sm shadow-sm transition-shadow hover:shadow-md">
               <img 
                 src="EKA.png" alt="EKA"
                 className="w-full h-auto aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </div>       
+            <h4>
+              <li>Structure - "Meta Models": Without meta-models, systems cannot scale</li>
+              <li>Mearing - "Knowledge Graphs":  Without knowledge graphs, data has no meaning</li>
+              <li>Execution - "AI & Agents": Without execution, architecture has no value</li>
+            </h4>
             <h3>Not diagrams! Not documentation! A system that can run!</h3>
-            <br/>
+            <div className="border border-gray-200 overflow-hidden rounded-sm shadow-sm transition-shadow hover:shadow-md">
+              <img 
+                src="EKA_Layered_Framework.png" alt="EKA Framework"
+                className="w-full h-auto aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div> 
+            <div>
+              <li>Transform enterprise architecture into AI-ready systems</li>
+              <li>Build knowledge graphs with real business meaning</li>
+              <li>Enable intelligent automation and decision-making</li>
+              <li>Connect fragmented systems into a unified knowledge layer</li>
+            </div>
           </section>
           <section id="share">
             <CourseList />
